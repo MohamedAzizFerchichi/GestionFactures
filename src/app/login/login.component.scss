@@ -1,0 +1,108 @@
+/* Common styles for both registration and login components */
+
+/* Form container */
+.registration-container,
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px; /* Add padding to create space around the form */
+}
+
+/* Form */
+.registration-form,
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Headings */
+.registration-form h2,
+.login-form h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+/* Focused input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: #007bff;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* "Already have an account?" message */
+p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  /* Adjust form max-width and padding for smaller screens */
+  .registration-form,
+  .login-form {
+    max-width: 100%;
+    padding: 15px;
+  }
+}

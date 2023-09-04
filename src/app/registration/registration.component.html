@@ -1,0 +1,31 @@
+<div class="registration-container">
+    <h2>Register</h2>
+    <form class="registration-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" [(ngModel)]="user.username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="user.email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label>Role</label>
+        <div class="role-radio">
+          <input type="radio" id="client" [(ngModel)]="user.role" name="role" value="Client" required>
+          <label for="client">Client</label>
+          <input type="radio" id="fournisseur" [(ngModel)]="user.role" name="role" value="Fournisseur" required>
+          <label for="fournisseur">Fournisseur</label>
+        </div>
+      </div>
+      <button type="button" (click)="register()">Register</button>
+    </form>
+    
+    <!-- Message for existing users -->
+    <p>Already have an account? <a routerLink="/login">Login</a></p>
+  </div>
+  
