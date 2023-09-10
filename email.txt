@@ -1,2 +1,2 @@
-password : SpringTest123
+password : 
 email : springtest75@gmail.com
